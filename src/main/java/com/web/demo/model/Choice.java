@@ -14,6 +14,7 @@ import java.util.Objects;
 public class Choice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "choices_id")
     private Long id;
 
     @NotBlank

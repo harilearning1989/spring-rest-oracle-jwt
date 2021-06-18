@@ -20,6 +20,7 @@ import java.util.List;
 public class Poll extends UserDateAudit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "polls_id")
     private Long id;
 
     @NotBlank

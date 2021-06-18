@@ -7,10 +7,11 @@ import javax.persistence.*;
  * Created by rajeevkumarsingh on 01/08/17.
  */
 @Entity
-@Table(name = "roles")
+@Table(name = "poll_roles")
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "role_id")
     private Long id;
 
     @Enumerated(EnumType.STRING)

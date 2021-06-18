@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
-public class UserController {
+public class UserRestController {
 
     @Autowired
     private UserRepository userRepository;
@@ -32,7 +32,7 @@ public class UserController {
     @Autowired
     private PollService pollService;
 
-    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserRestController.class);
 
     @GetMapping("/user/me")
     @PreAuthorize("hasRole('USER')")

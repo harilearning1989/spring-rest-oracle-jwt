@@ -1,0 +1,9 @@
+http://localhost:8081/api/auth/signup
+POST
+{
+    "name":"Hari Duddukunta",
+    "username":"hari.duddukunta",
+    "email":"hari.duddukunta@gmail.com",
+    "password":"password"
+}
+====================================================

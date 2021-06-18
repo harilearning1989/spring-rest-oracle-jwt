@@ -25,7 +25,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/api/polls")
-public class PollController {
+public class PollRestController {
 
     @Autowired
     private PollRepository pollRepository;
@@ -39,7 +39,7 @@ public class PollController {
     @Autowired
     private PollService pollService;
 
-    private static final Logger logger = LoggerFactory.getLogger(PollController.class);
+    private static final Logger logger = LoggerFactory.getLogger(PollRestController.class);
 
     @GetMapping
     public PagedResponse<PollResponse> getPolls(@CurrentUser UserPrincipal currentUser,

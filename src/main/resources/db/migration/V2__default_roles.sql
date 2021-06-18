@@ -1,2 +1,3 @@
-INSERT IGNORE INTO roles(name) VALUES('ROLE_USER');
-INSERT IGNORE INTO roles(name) VALUES('ROLE_ADMIN');
+INSERT INTO poll_roles(name) VALUES('ROLE_USER');
+INSERT INTO poll_roles(name) VALUES('ROLE_ADMIN');
+SELECT * FROM poll_roles;

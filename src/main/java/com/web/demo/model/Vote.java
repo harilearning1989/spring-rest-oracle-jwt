@@ -13,6 +13,7 @@ import javax.persistence.*;
 public class Vote extends DateAudit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "votes_id")
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
